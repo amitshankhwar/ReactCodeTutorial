@@ -10,6 +10,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Page404 from "./components/Page404";
 import UseRefHook from "./components/useRefHook";
 import Sccanner from "./components/Test";
+import UseMemoExample from "./useMemo/MemoHook";
 
 const App = () => {
   return (
@@ -26,6 +27,7 @@ const App = () => {
           <Route path="/*" element={<Page404 />} />
           <Route path="/useref" element={<UseRefHook />} />
           <Route path="/test" element={<Sccanner />} />
+          <Route path="/memo" element={<UseMemoExample />} />
         </Routes>
       </BrowserRouter>
     </>

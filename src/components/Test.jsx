@@ -4,12 +4,12 @@ function Sccanner() {
   const [data, setData] = useState({});
   const [error, setError] = useState(null);
   const url =
-    "https://linkedin-data-api.p.rapidapi.com/get-article-comments?url=https%3A%2F%2Fwww.linkedin.com%2Fpulse%2F2024-corporate-climate-pivot-bill-gates-u89mc%2F%3FtrackingId%3DV85mkekwT9KruOXln2gzIg%253D%253D&page=1&sort=REVERSE_CHRONOLOGICAL";
+    "https://linkedin-bulk-data-scraper.p.rapidapi.com/private_company_insights_2?link=http%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fgoogle";
   const options = {
     method: "GET",
     headers: {
-      "x-rapidapi-key": "8268e3dff7msh8ad832d379e477ep14d8f5jsne9a00e7704c6",
-      "x-rapidapi-host": "linkedin-data-api.p.rapidapi.com",
+      "x-rapidapi-key": "0b3fd7062amsh2a602357ddaa2b2p152c51jsn69a999950e6a",
+      "x-rapidapi-host": "linkedin-bulk-data-scraper.p.rapidapi.com",
     },
   };
 
@@ -18,7 +18,7 @@ function Sccanner() {
       try {
         const response = await fetch(url, options);
         const res = await response.json();
-        // console.log("the testing apis is ", res);
+        console.log("the testing apis is ", res);
 
         setData(res);
       } catch (error) {
