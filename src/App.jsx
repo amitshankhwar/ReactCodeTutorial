@@ -11,6 +11,7 @@ import Page404 from "./components/Page404";
 import UseRefHook from "./components/useRefHook";
 import Sccanner from "./components/Test";
 import UseMemoExample from "./useMemo/MemoHook";
+import Dashboard from "./lazyLoading/Dashboard";
 
 const App = () => {
   return (
@@ -28,6 +29,7 @@ const App = () => {
           <Route path="/useref" element={<UseRefHook />} />
           <Route path="/test" element={<Sccanner />} />
           <Route path="/memo" element={<UseMemoExample />} />
+          <Route path="/lazy" element={<Dashboard />} />
         </Routes>
       </BrowserRouter>
     </>
