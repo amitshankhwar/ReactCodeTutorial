@@ -12,6 +12,8 @@ import UseRefHook from "./components/useRefHook";
 import Sccanner from "./components/Test";
 import UseMemoExample from "./useMemo/MemoHook";
 import Dashboard from "./lazyLoading/Dashboard";
+// import Parent from "./upLiftingTheState/Parent";
+import Parent from "./context/Parent";
 
 const App = () => {
   return (
@@ -30,6 +32,8 @@ const App = () => {
           <Route path="/test" element={<Sccanner />} />
           <Route path="/memo" element={<UseMemoExample />} />
           <Route path="/lazy" element={<Dashboard />} />
+          <Route path="/uplift-state" element={<Parent />} />
+          <Route path="/context" element={<Parent />} />
         </Routes>
       </BrowserRouter>
     </>
